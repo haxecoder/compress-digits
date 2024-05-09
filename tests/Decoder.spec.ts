@@ -6,11 +6,11 @@ describe("decode()", () => {
 
     test("decode(!!!) => [1, 1, 1]", () => {
         const input = "!!!";
-        expect(unit.decode(input)).toBe([1, 1, 1]);
+        expect(unit.decode(input)).toEqual([1, 1, 1]);
     });
 
     test("decode(R!S) => [31, 1, 62]", () => {
         const input = "R!S";
-        expect(unit.decode(input)).toBe([31, 1, 62]);
+        expect(unit.decode(input)).toEqual([31, 1, 62]);
     });
 });
