@@ -16,7 +16,6 @@ export class Decoder {
                 continue;
             }
 
-
             if (this.tableInt.indexOf(current) !== -1) {
                 result.push(this.tableInt.indexOf(current) * this.table23.length);
                 continue;
