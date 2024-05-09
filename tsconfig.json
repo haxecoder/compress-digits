@@ -3,9 +3,10 @@
 		"strict": false,
 		"allowSyntheticDefaultImports": true,
 		"module": "ES2022",
+		"moduleResolution": "nodenext",
 		"target": "ES2022",
 		"types": [
-			"node", "jest", "types"
+			"node", "jest", "types", "module"
 		]
 	},
 	"include": [
