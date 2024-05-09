@@ -1,14 +1,11 @@
 import { Encoder } from "./Encoder";
-import { Decoder } from "./Decoder";
 import { Table1, Table23, TableInt } from "./Tables";
 
 class App {
     private readonly encoder: Encoder;
-    private readonly decoder: Decoder;
 
     constructor() {
         this.encoder = new Encoder(Table1, Table23, TableInt);
-        this.decoder = new Decoder(Table1, Table23, TableInt);
     }
 
     public run() {
