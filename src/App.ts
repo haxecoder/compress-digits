@@ -19,15 +19,15 @@ class App {
         this.runCase("one digit 500", this.generateInput(500, 9));
         this.runCase("one digit 1000", this.generateInput(1000, 9));
 
-        this.runCase("two digits 50", this.generateInput(50, 99, 10));
-        this.runCase("two digits 100", this.generateInput(100, 99, 10));
-        this.runCase("two digits 500", this.generateInput(500, 99, 10));
-        this.runCase("two digits 1000", this.generateInput(1000, 99, 10));
+        this.runCase("two digits 50", this.generateInput(50, 89, 10));
+        this.runCase("two digits 100", this.generateInput(100, 89, 10));
+        this.runCase("two digits 500", this.generateInput(500, 89, 10));
+        this.runCase("two digits 1000", this.generateInput(1000, 89, 10));
 
-        this.runCase("three digits 50", this.generateInput(50, 300, 100));
-        this.runCase("three digits 100", this.generateInput(100, 300, 100));
-        this.runCase("three digits 500", this.generateInput(500, 300, 100));
-        this.runCase("three digits 1000", this.generateInput(1000, 300, 100));
+        this.runCase("three digits 50", this.generateInput(50, 200, 100));
+        this.runCase("three digits 100", this.generateInput(100, 200, 100));
+        this.runCase("three digits 500", this.generateInput(500, 200, 100));
+        this.runCase("three digits 1000", this.generateInput(1000, 200, 100));
 
         this.runCase("all numbers 3 times", this.generateAllForThreeInput900());
     }
@@ -35,8 +35,9 @@ class App {
     private runCase(caseName: string, input: number[]) {
         console.log(`running case ${caseName}`);
         const serialized = input.join(",").length;
-        const encoded = this.encoder.encode(input).length;
-        console.log(`serialized: ${serialized}, encoded: ${encoded} (${((encoded / serialized) * 100).toFixed(3)}%)`);
+        const encoded = this.encoder.encode(input);
+        const encodedLen = encoded.length;
+        console.log(`serialized: ${serialized}, encoded: ${encodedLen} (${((encodedLen / serialized) * 100).toFixed(3)}%)`);
     }
 
     private generateAllForThreeInput900(): number[] {
