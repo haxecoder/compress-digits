@@ -1,0 +1,14 @@
+{
+	"name": "compress-digits",
+	"version": "1.0.0",
+	"scripts": {
+		"compile": "tsc -p .",
+		"run": "node bin/app.js",
+		"test": "vitest --config tests/vitest.config.ts"
+	},
+	"devDependencies": {
+		"@types/node": "^20.12.11",
+		"typescript": "^5.4.5",
+		"vitest": "^1.6.0"
+	}
+}
