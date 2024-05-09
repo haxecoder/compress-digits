@@ -1,5 +1,6 @@
 Test cases:
-running case random 50
+
+running case random 50  
 serialized: 182, encoded: 93 (51.099%) 
 
 running case random 100                  
