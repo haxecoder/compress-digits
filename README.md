@@ -32,7 +32,7 @@ serialized: 309, encoded: 176 (56.958%)
 running case two digits 500  
 serialized: 1537, encoded: 874 (56.864%)
 
-running case two digits 1000
+running case two digits 1000  
 serialized: 3102, encoded: 1763 (56.834%)
 
 running case three digits 50  
